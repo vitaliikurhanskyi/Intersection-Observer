@@ -1,0 +1,38 @@
+.card {
+	display: flex;
+	border: 2px solid #000;
+	margin: 20px 0;
+	width: 200px;
+	height: 50px;
+	font-size: 20px;
+	text-transform: uppercase;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	cursor: pointer;
+	transform: translateX(100px);
+	opacity: 0;
+	transition: 150ms;
+}
+
+.card:hover {
+	background-color: azure;
+}
+
+.card-container {
+	border: 3px solid #000;
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 20px auto;
+	/* height: 400px; */
+	/* overflow-y: scroll;
+	overflow-x: hidden; */
+}
+
+.card.show {
+	transform: translateX(0);
+	opacity: 1;
+}
